@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cadastro de Produto</title>
+
+   <link rel="stylesheet" type="text/css" href="./style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <h1> Cadastro de Produto</h1>
+   <form>
+      <label>
+         <input type="hidden" value="codProduto">
+      </label>
+      <fieldset>
+         <legend>Dados do Produto</legend>
+         
+         <label>
+            Código de Barras&nbsp;
+            <input type="number">
+         </label>
+
+         <label>
+            Descrição&nbsp;
+            <input type="text" required minlength="2" maxlength="20" class="input">
+         </label>
+
+         <label>
+            Unidade&nbsp;
+            <select name="unidades">
+               <option>UND</option>
+               <option>LT</option>
+               <option>ML</option>
+               <option>LATA</option>
+               <option>BALDE</option>
+            </select>
+         </label>
+
+         <label>
+            Preço R$&nbsp;
+            <input type="number" placeholder="0,00" required>
+         </label>
+
+         <label>
+            Custo de Compra R$&nbsp;
+            <input type="number" placeholder="0,00">
+         </label>
+
+         <label>
+            Última Compra&nbsp;
+            <input type="date">
+         </label>
+      </fieldset>
+
+      <fieldset>
+         <legend>Tributações</legend>
+         
+
+         <label>
+            Tipo de item&nbsp;
+            <select>
+               <option></option>
+               <option>Mercadoria pra revenda</option>
+               <option>Bem de consumo</option>
+               <option>Materia-prima</option>
+               <option>Embalagem</option>
+            </select>
+         </label>
+
+         <label>
+            NCM &nbsp;
+            <input type="number" maxlength="10">
+         </label>
+
+         <label>
+            IPPT &nbsp;
+            <input type="radio" name="ippt"> <span class="radio">Produção por Terceiros &nbsp; &nbsp;</span>
+            <input type="radio" name="ippt"> <span class="radio">Produção por Própria</span>
+         </label>
+
+         <label>
+            Origem &nbsp;
+            <input type="radio" name="origem"> <span class="radio">Nacional&nbsp; &nbsp;</span>
+            <input type="radio" name="origem"> <span class="radio">Estrangeira</span>
+         </label>
+      </fieldset>
+
+      <input type="submit" class="botao">
+   </form>
+</body>
+</html>
