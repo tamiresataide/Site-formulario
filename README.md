@@ -1,4 +1,4 @@
-# B7Web - Criação de um website utilizando flexbox
+# B7Web - Criação de um site de formulário
 
 Esse projeto faz parte do curso de HTML/CSS da [B7Web](https://b7web.com.br/fullstack/).
 
